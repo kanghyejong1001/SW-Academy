@@ -1,22 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
-        <title>image</title>
+        <title>멀티미디어</title>
     </head>
     <body>
+        <!-- 사진 -->
         <!-- <img src="gray.jpg" alt="배경사진" /> -->
         <!-- <img src="asset/star.jpg" alt="배경사진" /> -->
-        
-        <!-- 방법 1 : 단일태그
+        <figure>
+            <img width="500" height="300" src="asset/star.jpg" alt="background"/>
+            <figcaption>배경사진</figcaption>
+        </figure>
         <br><br><br>
-        <video src="asset/jammanbo.mp4" autoplay></video>  -->
 
-        방법 2 : 콘텐츠 태그
+
+        <!-- 비디오-->
+        방법 1 : 단일태그
+        <br><br><br>
+        <figure>
+            <video src="asset/jammanbo.mp4" autoplay loop></video> 
+        </figure>
+
+        <!-- 방법 2 : 콘텐츠 태그
         <br><br><br>
         <video autoplay controls>
             <source src="asset/jammanbo.mp4" />
             <source src="asset/jammanbo.mp4" />
-        </video>
+        </video> -->
 
+        <!-- 오디오 -->
+        <!-- <audio controls src=""></audio> -->
+
+
+        <!-- SVG -->
+        <!-- 
+            <svg ~~~~></svg> 
+            <img src="" />
+        -->
     </body>
 </html>

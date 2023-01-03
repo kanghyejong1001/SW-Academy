@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>form</title>
+    </head>
+
+    <body>
+        <form action="chapter06_result.html" method="get">
+            <label for="id">ID :</label>
+            <input id="id" name="id" type="text" value="id" readonly>
+
+            <br><br>
+            <label for="password">password : </label>
+            <input id="password" name="password" type="password" placeholder="password">
+
+            <br><br>
+            <label>
+                option :
+                <br>
+                <select name="opt" required>
+                    <option >option</option>
+                    <option>1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                </select>
+            </label>
+
+            <br><br>
+            <label>
+                check! : 
+                <input type="checkbox" value="checked" name="checkbox" required>
+            </label>
+            
+
+            <br><br>
+            <label>
+                radio : 
+                <input type="radio" name="num" value="1">1
+                <input type="radio" name="num" value="2">2
+                <input type="radio" name="num" value="3">3
+                <input type="radio" name="num" value="4">4
+            </label>
+            
+            <br><br>
+            <label>
+                file : 
+                <input type="file">
+            </label>
+
+
+            <br><br>
+            <label>
+                button : 
+                <input type="button" value="button!">
+            </label>
+            
+            
+            <br><br>
+            <label>
+                hidden : 
+                <input type="hidden" name="hidden type" value="wow">
+            </label>
+
+            <br><br>
+            <label>
+                textarea : 
+                <br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="enter"></textarea>
+            </label>
+
+
+            <br><br>
+            <button tpye="submit">Send!</button>
+
+        </form>
+    </body>
+</html>
