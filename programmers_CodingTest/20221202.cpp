@@ -1,3 +1,5 @@
+// n번째 fibonacci 구하기
+
 #include <iostream>
 
 using namespace std;

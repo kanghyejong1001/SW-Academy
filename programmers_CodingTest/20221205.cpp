@@ -1,3 +1,5 @@
+// 최대 공약수 구하기
+
 #include <iostream>
 
 using namespace std;
