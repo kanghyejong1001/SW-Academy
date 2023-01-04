@@ -1,0 +1,42 @@
+/* color: darkseagreen; */
+/* color: darkolivegreen; */
+/* color: olivedrab; */
+/* color: olive; */
+/* color: yellowgreen; */
+
+/* 태그 선택자 */
+body{
+    color: darkkhaki;
+}
+div{
+    color: olive;
+}
+
+/* 전체 선택자 */
+/* *{
+    color: gold;
+} */
+
+/* ID 선택자 */
+#id {
+    color: wheat;
+}
+
+/* Class 선택자 */
+.class:hover{
+    color: blue;
+}
+
+/* 속성 선택자, 의사 클래스 */
+[href="https://naver.com"]:hover {
+    color: red;
+}
+
+ul li:first-child{
+    color:blue;
+}
+
+/* 의사 요소 */
+a[target = "_blank"]::after{
+    content: ' +add';
+}
