@@ -1,0 +1,57 @@
+/* tag selector */
+p {
+    color: blue;
+}
+
+/* tag + id 자손 결합자 */
+div #p {
+    color: red;
+}
+
+/* tag + class 자손 결합자 */
+div .p {
+    color: coral;
+}
+
+/* tag + tag 자손 결합자 */
+p span {
+    color: gray;
+}
+
+/* id + tag 자손 결합자 */
+#div span {
+    color: yellow;
+}
+
+/* 자식 결합자 */
+div > span {
+    color: green;
+}
+
+/* 인접 형제 결합자 */
+p + span {
+    color: violet;
+}
+
+/* 일반 형제 결합자 */
+span ~ p {
+    color: aqua;
+}
+
+/* 우선순위 */
+
+#span {
+    color: yellow;
+}
+
+.span {
+    color: blue;
+}
+
+span {
+    color: red !important;
+}
+
+body span {
+    color: beige !important;
+}

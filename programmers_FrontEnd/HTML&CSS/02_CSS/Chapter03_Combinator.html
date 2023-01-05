@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Combinator</title>
+
+    <link rel="stylesheet" href="Combinator.css">
+</head>
+
+<body>
+    <h1>Combinator</h1>
+    
+    <p class="p">
+        p
+    </p>
+
+    <div>
+        <span>
+            div > span
+        </span>
+
+        <p>
+            div > p
+            
+            <br>
+            <span>
+                div > p > span
+            </span>
+        </p>
+
+        <span>
+            div > span
+        </span>
+    </div>
+
+    <div id="div">
+        <span>
+            div > span
+        </span>
+        
+        <p class="p">
+            div > p
+        </p>
+
+
+        <p id="p">
+            div > p
+        </p>
+
+        <p>
+            div > p
+        </p>
+
+        <p>
+            div > p
+        </p>
+    </div>
+
+    <span id="span" class="span" style="color: green;">
+        span
+    </span>
+
+
+</body>
+
+</html>
