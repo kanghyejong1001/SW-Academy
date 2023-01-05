@@ -12,6 +12,15 @@ div{
     color: olive;
 }
 
+h2{
+    color: blueviolet;
+}
+
+div h2{
+    color: inherit;
+    /* color: initial; */
+}
+
 /* 전체 선택자 */
 /* *{
     color: gold;
