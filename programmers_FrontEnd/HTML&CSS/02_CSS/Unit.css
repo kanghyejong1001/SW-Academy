@@ -1,0 +1,30 @@
+
+/* 고정 단위 픽셀 */
+div {
+    font-size: 20px;
+}
+
+/* 고정 단위 포인터 */
+div {
+    font-size: 20pt;
+}
+
+/* 상대 단위 em, vmin */
+div {
+    font-size: 1em;
+    width: 20vmin;
+    background: #ddd;
+}
+
+/* 상대 단위 rem, vw */
+div p {
+    font-size: 1rem;
+    line-height: 2em;
+    width: 50vw;
+    background: aqua;
+}
+
+/* 상대 단위 % */
+div p a {
+    font-size: 150%;
+}
