@@ -1,0 +1,14 @@
+div{
+    font-size: 40px;
+
+    /* background-color: #ddd;
+    background-image: url('asset/star.jpg');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: right 20px center; */
+
+    background: #ddd url('asset/star.jpg') no-repeat center / contain;
+
+    width: 300px;
+    height: 400px;
+}
