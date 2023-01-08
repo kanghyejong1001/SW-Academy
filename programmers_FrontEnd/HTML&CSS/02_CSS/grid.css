@@ -1,0 +1,59 @@
+.page {
+    display: grid;
+
+    grid-template-areas: 
+        "header slider slider"
+        "header content content"
+        "header banner footer"
+    ;
+
+    grid-template-rows: repeat(3, 100px);
+    /* grid-template-columns: repeat(3, 100px); */
+    gap: 15px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.slider {
+    grid-area: slider;
+}
+
+.content_ {
+    grid-area: content;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+.wrapper {
+    display: grid;
+
+    /* row, column 따로 설정 */
+    /* grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px); */
+
+    /* 한 번에 설정 x/y 순서 */
+    grid-template: repeat(4, 100px) / repeat(4, 100px);
+}
+
+.content {
+    background-color: #ddd;
+}
+
+.content1 {
+    background-color: #ffdada;
+
+    /* 단일 숫자를 쓰면 시작 위치 */
+    /* 'strat num / end num' or 'span num' */
+    grid-column: span 2;
+}
+
