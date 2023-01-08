@@ -1,0 +1,45 @@
+
+
+/* position */
+.wrapper {
+    position: static;
+}
+
+.content1 {
+    position: relative;
+    top: 10px;
+
+}
+
+/* float */
+/* .wrapper {
+    padding: 10px;
+}
+
+.wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content {
+    float: left;
+    width: 15%;
+} */
+
+
+
+img {
+    width: 150px;
+    float: right;
+}
+
+
+/* display */
+/* div {
+    display: inline;
+}
+
+span {
+    display: contents;
+} */
