@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    /* 기본값은 row */
+    flex-direction: row;
+
+    /* row축 정렬 */
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    /* column축 정렬 */
+    align-items: stretch;
+
+    /* 간격 */
+    gap:  10px;
+
+    /* 콘텐츠 포함 */
+    flex-wrap: wrap;
+
+
+    background-color: #ddd;
+    width: 500px;
+    height: 350px;
+    padding: 10px;
+}
+
+.content {
+    background-color: white;
+
+
+    /* 늘어나는 거 */
+    flex-grow: 0;
+
+    /* 줄어드는 거 */
+    flex-shrink: 1;
+
+    /* 크기를 조절 */
+    flex-basis: auto;
+    flex-basis: 200px;
+
+    /* grow shrink basis */
+    flex: 0 1 200px;
+
+}
+
+.content1{
+    order: 1;
+}
