@@ -11,11 +11,12 @@ let input = [];
 rl.on('line', function (line) {
     input.push(line.split(' ').map(item => Number(item)));
 }).on('close', function () {
-    let result = [];
+    // let result = [];
     input[1].reduce((accumulator, currentValue) => {
-        result.push(accumulator + currentValue)
+        // result.push(accumulator + currentValue)
+        process.stdout.write(accumulator + currentValue + " ");
         return accumulator + currentValue;
     }, 0);
     
-    console.log(...result);
+    // console.log(...result);
 });
