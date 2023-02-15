@@ -1,4 +1,4 @@
-const API_END_POINT = 'https://mwu.roto-frontend.programmers.co.kr'
+const API_END_POINT = 'https://misc.edu-api.programmers.co.kr'
 
 export const request = (url) => {
     return fetch(`${API_END_POINT}${url.indexOf('/') == 0 ? url : `/${url}`}`)

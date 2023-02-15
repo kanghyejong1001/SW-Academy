@@ -103,7 +103,7 @@ export default function ProductPage ({
                 )
             })
             .then(data => {
-                cosnt [ productOptions, stocks ] = data
+                const [ productOptions, stocks ] = data
                 const optionData = productOptions.map((productOption, i) => {
                     const stock = stocks[i][0].stock
                     
