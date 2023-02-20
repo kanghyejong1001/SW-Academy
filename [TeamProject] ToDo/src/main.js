@@ -1,6 +1,9 @@
 import { request } from "./api.js";
 
 
-const $target = document.querySelector('#app');
-
-request(``).then(item => console.log(item))
+const $target = document.querySelector('.app');
+const $div = document.createElement('div')
+request(``).then(item => {
+    $target.appendChild(() => $div.innerHTML = `${item}`)
+    console.log(item)
+})
