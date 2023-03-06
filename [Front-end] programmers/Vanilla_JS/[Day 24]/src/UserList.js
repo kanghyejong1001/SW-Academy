@@ -3,7 +3,7 @@ export default function UserList({
     initialState,
     onSelect
 }) {
-    const $UserList = document.createElement('divv')
+    const $UserList = document.createElement('div')
     $target.appendChild($UserList)
 
     this.state = initialState
