@@ -3,15 +3,12 @@ import { getTime, getDate } from "./Current.js";
 export default function Time ({ $target }) {
     const $date = document.createElement('h2')
     const $time = document.createElement('h3')
-    console.log($target)
+
     $target.appendChild($date)
     $target.appendChild($time)
     
     let time = getTime()
     let date = getDate()
-    console.log(time)
-    console.log(date)
-
     
     this.init = () => {
         $date.innerHTML = `${date.year}/${date.month}/${date.day}`

@@ -3,7 +3,7 @@ import TodoListView from "./TodoListView.js"
 
 export default function TodoList ({
     $target,
-    initalState = [],
+    initalState,
 
 }) {
     const $todoList = document.createElement('div')
@@ -22,13 +22,17 @@ export default function TodoList ({
 
     const todoListView = new TodoListView({
         $target: $todoList,
-        initialState: this.state
+        initialState: {
+            todos: this.state.todos
+        }
     })
 
     this.render = () => {
         todoListView.setState({
             $target: $todoList,
-            initalState: this.state 
+            initalState: {
+                todos: this.state.todos
+            }
         })
     }
 

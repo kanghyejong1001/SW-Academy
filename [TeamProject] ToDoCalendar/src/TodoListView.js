@@ -35,11 +35,14 @@ const DUMMY_DATA = [
         isCompleted: false
     },
 ]
+
 export default function TosoListView ({ $target, initialState }) {
     const $todoListView = document.createElement('div')
     $target.appendChild($todoListView)
 
     this.state = initialState
+
+    console.log(this.state)
 
     this.setState = nextState => {
         this.state = nextState
@@ -47,9 +50,11 @@ export default function TosoListView ({ $target, initialState }) {
     }
 
     this.render = () => {
+        let { todos } = this.state
+        todos = DUMMY_DATA
         $todoListView.innerHTML = `
             <ul>
-                ${DUMMY_DATA.map(({ _id, content, isCompleted }) => `
+                ${todos.map(({ _id, content, isCompleted }) => `
                     <li data-id="${_id}", class="todo-item">
                         ${isCompleted ? `<s>${content}</s>` : content}
                         <button class="remove">x</button>
@@ -62,14 +67,16 @@ export default function TosoListView ({ $target, initialState }) {
     this.render()
 
     $todoListView.addEventListener('click', (e) => {
+        let { todos } = this.state
+        todos = DUMMY_DATA
         const $li = e.target.closest('.todo-item')
         if ($li) {
             const { id } = $li.dataset
             const { className } = e.target
             if (className === 'remove') {
-                DUMMY_DATA.splice(id - 1, 1)
+                todos.splice(id - 1, 1)
             } else {
-                DUMMY_DATA[id - 1].isCompleted = !DUMMY_DATA[id - 1].isCompleted
+                todos[id - 1].isCompleted = !todos[id - 1].isCompleted
             }
         }
         this.render()
