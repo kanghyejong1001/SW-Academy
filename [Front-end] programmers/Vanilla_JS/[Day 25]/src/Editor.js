@@ -10,8 +10,8 @@ export default function Editor({
     const $editor = document.createElement('div')
 
     $editor.innerHTML = `
-                <input type="text" name="title" style="width:600px;border:1px solid black;padding:8px" /><br>
-                <div name="content" constentEditable="true" style="width:600px;height:400px;border:1px solid black;padding:8px"></div>
+                <input type="text" name="title" style="width:600px;border:1px solid black;padding:20px; margin:20px" /><br>
+                <div name="content" contentEditable="true" style="width:600px;height:400px;border:1px solid black;padding:20px; margin:20px"></div>
             `
 
     this.state = initialState
